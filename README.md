@@ -17,4 +17,8 @@ orange3공부
     : 낮을수록 좋음 
 
 
-6. imag
+6. Image Leanring
+  -> 패키지 다운하기
+  (1) Image Embedding
+   -> 데이터를 백터 형식으로 바뀜 =>> 숫자 형식으로 바꿈
+   google에서 이미지를 숫자로 바꾸어 주는 inception v3프로그램을 사용
