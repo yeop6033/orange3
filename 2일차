@@ -1,0 +1,22 @@
+오렌지 파일 생성
+목표 : 직원감소률(Attrition_rate)을 파일을 통해 예측하기!
+1. 결측데이터 처리
+  ->Feature Statics사용
+  ->missing data 확인(결측데이터 확인)
+  ->결측데이터 처리방법=> 대치법사용 
+  -> transform에 있는 input을 사용
+  ->Remove Instatance with unknown  values에 채크
+  ->확인하면 missing data 0인것을 확인가능
+2. 변수 정리
+  ->Trian data에 있는 Type을 유형에 맞게 정리
+  ->Education Level,Post_Level, Pay_Scale, Work_Life_balance는 numeric으로 나타내는 것 보다 categorical
+  로 바꾸는것이 더 좋아보임으로 변경
+3. 감소률 확인하기
+ (1) 확인해야할 자료가 열에 있으므로 columns 선택
+ (2) Target설정하기 --> 직원감소률 Attrition_rate
+ (3) 확인하기 --> 학습데이터와 검증데이터로 나누어 사용
+    [1]학습데이터와 검증데이터는 보통 7:3 or 8:2로 나누어 확인 =>8:2로 나누어 작업함
+    [2]5353개의 instance(사례)를 8:2로 나누어 4283:1070개로 확인
+    
+    
+ 
