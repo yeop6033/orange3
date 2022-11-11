@@ -18,5 +18,40 @@
     [1]학습데이터와 검증데이터는 보통 7:3 or 8:2로 나누어 확인 =>8:2로 나누어 작업함
     [2]5353개의 instance(사례)를 8:2로 나누어 4283:1070개로 확인
     
-    
- 
+4. 모델 학습시키기
+ (1) Test and score 사용
+   [1] 필요한것
+      - training data
+      -learning 알고리즘
+   [2] 적합한 모델찾기
+      -고려사항
+      (1)분류
+      (2)회귀
+      (3)직원감소률 사람으로 찾는 것임으로 회귀 문제인것으로 판단
+   [3] 회귀 알고리즘
+      (1)Tree사용 -연결- Test and Score
+   [4] Test and score 자료 읽는법
+      회귀: 작을수록 모델이 성능이 좋다
+      (1) MSE : Mean square error 
+      (2) RMSE: Rute Mean Square error
+      (3) MAE : Mean absolute error
+      (4) R2 :
+    [5] Tree 모델과 Random Forest 모델 비교
+       Test on test data
+          Model     MSE                    RMSE                MAE                    RE
+      (1) Tree	  0.06602158614824111	0.2569466601227599	0.17800979453653978	-0.9246884841522061
+      (2) Random 	0.038656040181155434	0.19661139382333728	0.13947495980010338	-0.1269168119126891
+      (3) 결과 : Random Forest 모델이 더 좋은 성능이 있는 걸 알수 있다
+      
+   [6] 예측
+      (1)predictions 선택
+       -모델에 대한 예측값을 확인
+       -위의 모델중 성능이 좋은 random forest를 Data Sampler에다가 연결
+       -random forest를 prediction에다가 연결
+   [7] 결과
+      (1) random forest 
+        - random forest 예측결과 값이 적을수록 회사에 남아 있을 확률이 높다는 것을 확인 가능
+  
+       
+   
+     
